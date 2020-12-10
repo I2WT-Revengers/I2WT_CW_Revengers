@@ -95,3 +95,15 @@ div.navigation>ul>li{
     font-family: monospace;
     text-align-last: center;
 }
+
+.box {
+    width:1300px;
+    border:px;solid darkgrey;
+    padding:px;
+    margin:px;
+    background-color:darkgrey;
+    text-align:left;
+    font-family: monospace;
+    
+                                        
+}
