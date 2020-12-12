@@ -153,6 +153,8 @@ ul#navigation ul li a {
     font-size: 18px;
     margin-right:250px;
     margin-left:250px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 body{
     background-color: antiquewhite;
@@ -198,4 +200,9 @@ div.content span{
     
     
                                         
+}
+.contentimage{
+    width: 500px;
+    height:250px;
+    border: 3px solid black;
 }
