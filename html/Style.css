@@ -186,13 +186,10 @@ div.content span{
 
 
 .box {
-    width:1300px;
-    border:px;solid darkgrey;
-    padding:px;
-    margin:px;
-    background-color:darkgrey;
-    text-align:left;
-    font-family: monospace;
+    height: 200px;
+    width: 350px;
+    background-color: black;
+    color: lime
     
                                         
 }
