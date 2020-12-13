@@ -212,3 +212,15 @@ div.content span{
     margin-right: auto;
     width: 50%;
 }
+
+.table,td,th
+{
+border: 1.5px solid black;
+padding:8px;
+    
+}
+.table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
