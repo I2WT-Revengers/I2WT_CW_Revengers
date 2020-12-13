@@ -156,6 +156,10 @@ ul#navigation ul li a {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.content ul li{
+    padding:5px;
+    }
 body{
     background-color: antiquewhite;
 }
@@ -201,8 +205,10 @@ div.content span{
     
                                         
 }
-.contentimage{
-    width: 500px;
-    height:250px;
-    border: 3px solid black;
+.contentimage
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
