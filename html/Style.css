@@ -233,3 +233,9 @@ div.content span{
     width:20%;
     right:10px;
 }
+th{
+    background-color: 4CAF50;
+    color:blue;}
+tr:nth-child(even){
+    background-color:#f2f2f2;
+}
