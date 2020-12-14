@@ -6,14 +6,15 @@
         <link rel="stylesheet" type="text/css" href="Style.css">
     </head>
     <body>
-        <div class="navigation">
+        <div class="navigation" name="top">
             <nav id="nav">
                 <ul id="navigation">
                     <li><a href="../index.html">Home &raquo;</a>
                         <ul>
-                            <li><a href="Domains.html">What are Domains</a></li>
                             <li><a href="HistoryOfWebDesign.html">History of web design</a></li>
-                            <li><a href="WebServers.html"> Web Servers </a>
+                            <li><a href="WebServers.html">Web servers</a></li>
+                            <li><a href="Domains.html"> Domains </a></li>
+                            <li><a href="References.html"> References </a></li>
                         </ul>
                     </li>
                     <li><a href="html/">HTML &raquo;</a>
@@ -27,9 +28,10 @@
                     <li><a href="IntroductiontoCSS.html">CSS &raquo;</a>
                         <ul>
                             <li><a href="IntroductiontoCSS.html">Introduction to CSS</a></li>
+                            <li><a href="RoleofCSS.html">Role</a></li>
+                            <li><a href="HistoryofCSS.html">History</a></li>
                             <li><a href="DocumentationofCSS.html">Documentation</a></li>
-                            <li><a href="HistoryofCSS.html">History of CSS</a></li>
-                            <li><a href="#">...</a></li>
+                            <li><a href="ReferencesCSS.html">References</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Java Script &raquo;</a>
@@ -44,16 +46,65 @@
                 </ul>
             </nav>
         </div>
+        <img class="logo" src="../images/WWWL.gif">
         <h1 class="mainh">Web Servers</h1>
         <br><br><br><br><br><br><br>
         <div class="content">
-            <h2 >What are web servers.</h2>
-            <p>A <span class="nameplate">web server</span> is a server that accepts HTTP requests from clients, usually web browsers, and issues HTTP responses to them, usually along with an HTML page, image, file, media stream, or other data.
+            <h2 >What are servers?</h2>
+            <p>To answer this question, you need to understand where the word "server" comes from. It is based on the English verb to serve, which translates as "to serve." So, server, in simple words, is a special computer that serves to ensure that this or that information network (for example, local) can fully function.</p>
+            <img class="contentimage" src="../images/WebServers2.png" alt="WebServer picture">
+            <p class="picturetxt">Server[1]</p>
+            <h2>Functions:</h2>
+            <p>Machine, depending on its type and purpose, can perform various useful functions:</p>
+            <ul>
+                <li>Store information from one or more sites. This is how the servers of Internet providers providing hosting services work;</li>
+                <li>Coordinate the interaction of many computers on the same network. A classic example is game servers;</li>
+                <li>Used to store corporate data and employee access to them. One possible example is a server at the headquarters of a company that stores and regularly updates an accounting database.</li>
+            </ul>
+            <h2>Hardware</h2>
+            <p>Any server, regardless of its type and purpose, is a computer. That is why he has on board classic computer components:</p>
+            <ul>
+                <li>The motherboard, which plays the role of the basis of the system;</li>
+                <li>One or more central processing units;</li>
+                <li>Certain amount of RAM</li>
+                <li>Data storage system consisting of drives of one type or another.</li>
+            </ul>
 
-                A web server refers to both the software that performs the functions of a web server and the computer itself on which this software runs. </p>
+            <img class="contentimage" src="../images/WebServer3.png" alt="Server hardware picture">
+            <p class="picturetxt">Server hardware[1]</p>
 
-            <img class="contentimage" src="../images/WebServer1.jpeg">
+            <p>The "hardware" of the server, while being fundamentally similar to the components of an ordinary personal computer, has its own specifics. It is connected with the fact that the main tasks of server equipment are storage, intensive processing and fast transfer of large amounts of data. For them to succeed, the servers equip:</p>
+            <ul>
+                <li>High-performance multi-core processors;</li>
+                <li>Large amount of RAM with error control;</li>
+                <li>Capacious and high-speed hard drives and solid-state drives.</li>
+            </ul>
+            <h2>Software and types of Servers</h2>
+            <p>Particular attention should be paid to the server software, which runs the above hardware. Ordinary operating systems - the same Windows, perhaps known to everyone - in this case are poorly suited or not at all. Server versions of the OS are used - both developed by Microsoft and included in the Linux family. The latter, by the way, have received the widest possible distribution, since they ensure the stability of servers, data security and configuration flexibility. Working with a server OS of the Linux family (for example, Ubuntu Server) requires special knowledge, so data centers and companies hire qualified IT specialists.If we are talking about a small server that does not require special functionality and processing power, an ordinary operating system may also work. Thus, the capabilities of Windows are more than enough to configure FTP and organize the operation of a file server accessible to a limited number of people.
+            </p>
+            <p>Types:</p>
+            <ul>
+                <li>A <span>file server</span> is a centralized storage of information, access to the disks of which have personal computers connected to the local network. The main task of the file server is reduced to reliable data storage and uninterrupted access to it, and in case of damage to files - their complete recovery.</li>
+                <li>The <span>database server</span> is not so much a means of storing and accessing, but of processing arrays of information. Through client requests, the requested information is retrieved, the data is processed, structured, and changed depending on the server settings. These servers are managed by DBMS (Database Management Systems), the most famous of them are MS SQL Server, Oracle, MySQL. The number of users and the size of the database, as well as the prospects for future growth, determine such important characteristics of the database server as capacity and scalability.</li>
+                <li>A <span>print server</span> (print server) allows one printing device to be used to service multiple computers. The function of the print server is to accept requests for print output, line them up and send them to the printer according to it. Thus, money is saved on equipping each computer with its own printer, their memory is freed up for other tasks, office space is rationally used.</li>
+                <li>A <span>workgroup server</span> is a multifunctional hardware solution for a group of computers (usually no more than 20). Combines the capabilities of a file server, application server, database, print / fax server, mail and others, depending on the needs. In general use, the workgroup server is obliged to delimit access to data and user rights. Usually has one processor, most often used in small firms where there is no need to allocate servers for separate tasks.</li>
+                <li><span>Domain Controller (Domain Controller server)</span> - the main computer in a local network with a hierarchical structure - the domain. The domain controller is used to centrally manage domain resources — computer and user accounts. Using the Active Directory directory service, it stores user data and authenticates them to access local network resources. Works under control of server OS from MS Windows, starting from Windows 2000 Server. A domain controller is an important element of the network infrastructure of large companies. In addition, it can act as a file server and print server.</li>
+                <li><span>Mail server</span>, or e-mail server, message server - the name speaks for itself. The main task of such a server is to recognize the addresses of incoming e-mail and distribute it to the intranet mailboxes, as well as send outgoing messages, and ensure internal correspondence. The mail server provides reliable filtering of spam and malware in messages and protects internal information from unwanted access.</li>
+                <li><span>FTP servers</span> are an integral part of the technical support of the World Wide Web. Their task is to transfer files at the request of simple file managers using the standard File Transfer Protocol. The most advanced FTP servers are able to categorize files by type and location, restrict access to them, or provide opportunities for sharing on the Internet.</li>
+                <li>A <span>proxy server</span> is an intermediary between local network users and the Internet. Provides secure Internet access, protecting against unwanted access from outside and, if necessary, restricting access to certain resources for local network users. In addition, it performs a number of other functions: accounting and saving traffic by compressing data, caching, anonymizing access.</li>
+                <li><span>Web server (web application server)</span> - a specially dedicated computer that is responsible for accessing the campaign site of Internet users, correct and fast display of static or dynamic pages. The web server is obliged to ensure the uninterrupted operation of the Internet resource, taking into account the attendance, resist network attacks, and prevent the possibility of hacking. The more important a website plays in a business process (for example, it provides communication with customers, is a sales channel for products), the more important this server is for it. In recent years, a web server is often called not the machine itself, but the program that performs the above functions.</li>
+            </ul>
+            <h2>Web servers more close:</h2>
 
+            <p>A <span class="nameplate">web server</span> is a server that accepts HTTP requests from clients, usually web browsers, and issues HTTP responses to them, usually along with an HTML page, image, file, media stream, or other data. A web server refers to both the software that performs the functions of a web server and the computer itself on which this software runs. </p>
+
+
+            <img class="contentimage" src="../images/WebServer1.gif">
+            <p class="picturetxt">Web server - user diagramm.</p>
+
+            <p>A web server is a program.It works continiously on the server, waiting for a site visitor to request a new page from it.</p>
+            <br>
+            <a href="#top">To the top!</a>
         </div>
 
         <div class="footer">
