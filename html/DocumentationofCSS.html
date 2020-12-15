@@ -49,32 +49,165 @@
         <img class="logo2" src="../images/ccslogo.png">
         <h1 class="mainh">Documentation</h1>
         <br><br><br><br><br><br><br>
-        <!--        <div class="content">-->
-
+                <div class="content">
+                        <h2>How to Link HTML file to CSS</h2>
+                    
+                        <span>External CSS</span><p>In case that we want a more complicated process, such as changing the font or background of the page,we would create a separate CSS file for this purpose, describing the
+                        Formatting of the different sections of the page, as follows:</p>
+                    <ul>
+                    
+                    <li>Create a new CSS file (eg template.css) with the desired code formatting content.</li>
+                    <li>Link the formatting content to the HTML file.</li>
+                    
+                    </ul>
+                    <p>
+                        Example.
+                        <br>
+                        <br>
+                    
+                        External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; section of an HTML page:
+                        
+                        </p>
+        
         <div class="box">
-            <pre>ul#navigation li {
-    display:inline;
-    font-size:12px;
-    font-weight:bold;
-    margin:0;
-    padding:0;
-    float:left;
-    position:relative;
-    border-top:1px solid #c4dbe7;
-    border-bottom:2px solid #c4dbe7;
-}</pre>
+               
+            &lt;!DOCTYPE html&gt; <br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;link rel="stylesheet" href="mystyle.css"&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
 
+           &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
 
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+            
+            
         </div>
-        <br>
-        <div class="box">
-            <pre>ul#navigation li {
-    display:inline;
-    font-size:12px;
-}</pre>
+                    <p>An external style sheet can be written in any text editor, and must be saved with a .css extension.<br>
+                        <br>
 
+The external .css file should not contain any HTML tags.<br>
+<br>
+Here is how the "mystyle.css" file looks:<br></p>
+                    <div class="box">
+                        
+                        
+                        body {<br>
+                            background-color: lightblue;<br>
+                                }<br>
+<br>
+                        h1 {<br>
+                            color: navy;<br>
+                            margin-left: 20px;<br>
+                            }<br>
+                        
+                       
+                        
+                        </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <p>Note that to achieve the above connection, these two files will
+                        must be on the same path (folder)
+                    </p>
+                    
+                    <p>
+                        This way, however, is not the only one. Two other methods exist that someone could achieve the same
+                        same results and are described below, but they are used only in small
+                        sites, due to the increasing of complexity of the code involving:
+                    </p>
+                    
+                    
+                    
+                    <span>Inline CSS</span><p>In case that the formatting concerns only one
+                            (or generally few) item and is not intended to be reused, it may
+                            integrate it into an attribute style.Given this, it is reasonable to ask what will happen when  formatting an element is defined by both an attribute style in the HTML file,
+                            as well as from a separate CSS file.In this case, the browser will
+                            prioritize formatting within the attribute
+                            style for this item.</p>
+                        
+                        <p>Example<br>
+                            <br>
+                            Inline styles are defined within the "style" attribute of the relevant element:
+                        </p>
+                        <div class="box">
+                        
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html&gt;<br>
+                                &lt;body&gt;<br>
 
-        </div>
+                                    &lt;h1 style="color:blue;text-align:center;"&gt;This is a heading&lt;/h1&gt;<br>
+                                    &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;<br>
+
+                                 &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                            
+                            
+                        </div>
+                        
+                        
+                         <span>Internal CSS</span>
+                    <p>There are cases that we would like to
+                    apply some CSS rules only to a specific page and not to the
+                    whole site.<br>
+                    An internal style sheet may be used if one single HTML page has a unique style.<br>
+
+                    The internal style is defined inside the &lt;style&gt; element, inside the head section.<br>
+                    <br>
+                    Examle
+                    <br>
+                    </p>
+                             
+                        <div class="box">
+                        
+                           
+                &lt;!DOCTYPE html&gt; <br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;style&gt;<br>
+                    body{<br>        
+                  background-color: linen;<br>
+                            }<br>
+                            
+                    h1 {<br>
+                    color: maroon;<br>
+                    margin-left: 40px;<br>
+                            }<br>            
+                
+                &lt;/style&gt;<br>       
+                &lt;/head&gt;<br>
+                            
+                &lt;body&gt;<br>
+
+                &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+                    
+                    
+                    
+                    
+                    
+                    
+                        
+                        </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+          </div>                              
 
         <div class="footer">
             <h4>Developed by <span id="nameplate">"Revengers"</span></h4>
