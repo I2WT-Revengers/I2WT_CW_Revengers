@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel=stylesheet type="text/css" href="webStyle.css">
+
+        <style>
+
+            body{
+                background-color: #ffe033;
+            }
+
+            table, td, th{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            h1{
+                text-align: center
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="content">
+
+            <div class="heading">
+
+                <h1>HTML</h1>
+
+            </div>
+            
+            <div class="button">
+                <button>Switch background color</button>
+                    <script type="text/javascript">
+                        var color = ["#ffe033", "#42ff38",         "#38acff", "#6d38ff",       "#ffe033"];
+                        var i =0;
+                        document.querySelector("button").addEventListener("click", function(){
+                            i = 1 < color.length ? ++i : 0;
+                            document.querySelector("body").style.background = color[i];
+                        })
+                    </script>
+            </div>
+
+            <div class="navigation">
+                <h2>Navigation</h2>
+                <ul>
+
+                    <li><a class="selected" href="main.html">Main</a></li>
+                    <li><a class="selected" href="htmlDocumentation.html">Documentation</a></li>
+                    <li><a class="selected" href="htmlHistory.html">History</a></li>
+
+                </ul>
+            </div>
+
+            <div class="main">
+
+                <p>In nowadays world, we use websites everyday. And the way they are constructed is amazing. The main component of a website structure is HTML, Hyper Text Markup Language. (if you want to see othe components of which websites are made, click <a href = "main.html"> here</a>).
+                </p>
+
+                <p>
+
+                    HTML language is responsible for the structure of the website.
+
+                </p>
+                <p>Hypertext Markup Language, or HTML, is a programming language used to describe the structure of information on a web page. Together, HTML, CSS, and JavaScript make up the essential building blocks of websites, with CSS controlling a page’s appearance, and JavaScript programming its functionality. You can think of HTML as providing the bones of a web page, while CSS provides the skin, and JavaScript provides the brains.
+
+                    A web page can contain headings, paragraphs, images, videos, and many other types of data. Front-end developers use HTML elements to specify what kind of information each item on a web page contains — for instance, the “p” element indicates a paragraph. Developers also write HTML code to specify how different items relate to one another in the overall structure of the page.
+
+                    Every website you open in your browser, from social networks to music services, uses HTML. A look under the hood of any website would reveal HTML code providing structure for all the page’s components.Hypertext Markup Language, or HTML, is a programming language used to describe the structure of information on a web page. Together, HTML, CSS, and JavaScript make up the essential building blocks of websites, with CSS controlling a page’s appearance, and JavaScript programming its functionality. You can think of HTML as providing the bones of a web page, while CSS provides the skin, and JavaScript provides the brains.
+
+                    A web page can contain headings, paragraphs, images, videos, and many other types of data. Front-end developers use HTML elements to specify what kind of information each item on a web page contains — for instance, the “p” element indicates a paragraph. Developers also write HTML code to specify how different items relate to one another in the overall structure of the page.
+
+                    Every website you open in your browser, from social networks to music services, uses HTML. A look under the hood of any website would reveal HTML code providing structure for all the page’s components.Hypertext Markup Language, or HTML, is a programming language used to describe the structure of information on a web page. Together, HTML, CSS, and JavaScript make up the essential building blocks of websites, with CSS controlling a page’s appearance, and JavaScript programming its functionality. You can think of HTML as providing the bones of a web page, while CSS provides the skin, and JavaScript provides the brains.
+
+                    A web page can contain headings, paragraphs, images, videos, and many other types of data. Front-end developers use HTML elements to specify what kind of information each item on a web page contains — for instance, the “p” element indicates a paragraph. Developers also write HTML code to specify how different items relate to one another in the overall structure of the page.
+
+                    Every website you open in your browser, from social networks to music services, uses HTML. A look under the hood of any website would reveal HTML code providing structure for all the page’s components.</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Copyright &copy; 2020 Alen Avagyan
+        </div>
+
+    </body>
+</html>

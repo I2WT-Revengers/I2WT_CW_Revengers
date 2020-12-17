@@ -1,0 +1,119 @@
+<!DOCTYPE>
+<html>
+
+    <head>
+
+        <link rel=stylesheet type="text/css" href="webStyle.css">
+
+        <style>
+
+            body{
+                background-color: #ffe033;
+            }
+
+            table, td, th{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            h1{
+                text-align: center
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="content">
+
+            <div class="heading">
+
+                <h1>History</h1>
+
+            </div>
+
+            <div class="button">
+                <button>Switch background color</button>
+                <script type="text/javascript">
+                    var color = ["#ffe033", "#42ff38",         "#38acff", "#6d38ff",       "#ffe033"];
+                    var i =0;
+                    document.querySelector("button").addEventListener("click", function(){
+                        i = 1 < color.length ? ++i : 0;
+                        document.querySelector("body").style.background = color[i];
+                    })
+                </script>
+            </div>
+
+            <div class="navigation">
+                <h2>Navigation</h2>
+                <ul>
+
+                    <li><a class="selected" href="main.html">Main</a></li>
+                    <li><a class="selected" href="htmlDocumentation.html">Documentation</a></li>
+                    <li><a class="selected" href="htmlPage.html">HTML</a></li>
+
+                    <div class="main">
+
+                        <p>
+                            The origin of HTML dates back to 1980, when the physicist Tim Berners-Lee, a worker at CERN (European Organization for Nuclear Research) proposed a new "hypertext" system for sharing documents.
+
+                            The "hypertext" systems had been developed years before.
+
+                            In the field of information technology, the "hypertext" allowed users to access information related to the electronic documents they were viewing.
+
+                            In a certain way, the primitive "hypertext" systems could be assimilated to the links of the current web pages.
+
+                            After completing the development of its "hypertext" system, Tim Berners-Lee presented it to a call organized to develop a "hypertext" system for the Internet.
+
+                            After joining forces with systems engineer Robert Cailliau, they presented the winning proposal called World Wide Web (W3).
+
+                            The first formal document with the description of HTML was published in 1991 under the name HTML Tags (HTML tags) and can still be consulted online today as a computer relic.
+
+                            The first official proposal to convert HTML into a standard was made in 1993 by the IETF (Internet Engineering Task Force).
+
+                            Although significant progress was made (at this time the labels for images, tables and forms were defined) none of the two standard proposals, called HTML and HTML +, managed to become the official standard.
+
+                            In 1995, the IETF organizes a working group of HTML and manages to publish, on September 22 of that same year, the HTML 2.0 standard. Despite its name, HTML 2.0 is the first official HTML standard.
+
+                            As of 1996, the HTML standards are published by another standard organization called W3C (World Wide Web Consortium).
+
+                            The HTML 3.2 version was published on January 14, 1997 and is the first HTML recommendation published by the W3C.
+
+                            This revision incorporates the latest advances of the websites developed up to 1996, such as Java applets and text that flows around the images.
+
+                            HTML 4.0 was published on April 24, 1998 (being a corrected version of the original publication of December 18, 1997) and is a great leap from previous versions. Among its most noteworthy novelties are the CSS stylesheets, the possibility of including small programs or scripts in the websites, improving the accessibility of the designed pages, complex tables and improvements in the forms.
+
+                            The last official HTML specification was published on December 24, 1999 and is called HTML 4.01. It is a revision and update of the HTML 4.0 version, so it does not include significant news.
+
+                            Since the publication of HTML 4.01, the standardization activity of HTML stopped and the W3C focused on the development of the XHTML standard.
+
+                            For this reason, in 2004, the companies Apple, Mozilla and Opera showed their concern about the lack of interest of the W3C in HTML and decided to organize in a new association called WHATWG (Web Hypertext Application Technology Working Group).
+
+                            The current activity of the WHATWG is focused on the future HTML5 standard, whose first official draft was published on January 22, 2008.
+
+                            Due to the strength of the companies that make up the WHATWG group and the publication of the HTML 5.0 drafts, in March In 2007 the W3C decided to resume the standardizing activity of HTML.
+
+                            Parallel to its activity with HTML, W3C has continued with the standardization of XHTML, an advanced version of HTML and based on XML.
+
+                            The first version of XHTML is called XHTML 1.0 and was published on January 26, 2000 (and subsequently revised on August 1, 2002).
+
+                            XHTML 1.0 is an adaptation of HTML 4.01 to the XML language, so it maintains almost all its tags and features, but adds some restrictions and elements of XML.
+
+                            The XHTML 1.1 version has already been published in draft form and aims to modularize XHTML.
+
+                            It has also been published the draft of XHTML 2.0, which will be a very important change from previous versions of XHTML.
+                        </p>
+
+                        <div class="footer">
+                            Copyright &copy; 2020 Alen Avagyan
+                        </div>
+
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+</html>
