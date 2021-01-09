@@ -36,10 +36,6 @@ ul#navigation li a {
     border-left:1px solid #F5CD71;
     border-top:1px solid #fff;
     background:#F5CD71;
-
-    -webkit-transition:color 0.2s linear, background 0.2s linear;
-    -moz-transition:color 0.2s linear, background 0.2s linear;
-    -o-transition:color 0.2s linear, background 0.2s linear;
     transition:color 0.2s linear, background 0.2s linear;
 }
 
@@ -48,27 +44,19 @@ ul#navigation li a:hover {
     color:#282828;
 }
 
-ul#navigation li a.first {
-    border-left: 0 none;
-}
 
-ul#navigation li a.last {
-    border-right: 0 none;
-}
 
 ul#navigation li:hover > a {
     background:#fff;
 }
-/* Drop-Down Navigation */
+
 ul#navigation li:hover > ul
 {
-    /*these 2 styles are very important,
-    being the ones which make the drop-down to appear on hover */
     visibility:visible;
     opacity:1;
 }
 
-ul#navigation ul, ul#navigation ul li ul {
+ul#navigation ul{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -82,9 +70,6 @@ ul#navigation ul, ul#navigation ul li ul {
     background:#f8f8f8;
     box-shadow:1px 1px 3px #ccc;
     /* css3 transitions for smooth hover effect */
-    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
-    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
-    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
     transition:opacity 0.2s linear, visibility 0.2s linear;
 }
 
@@ -180,11 +165,16 @@ div.content span{
 .names{
     font-style: italic;
 }
-.gatebutton{
-    height:200px;
-    width:200px;
-    font-display: block;
-    background-image: url(https://i.gifer.com/WtEG.gif)
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
 
 
@@ -201,6 +191,15 @@ div.content span{
 
 
 
+}
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+.button-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
 .contentimage
 {
