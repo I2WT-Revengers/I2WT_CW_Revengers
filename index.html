@@ -34,7 +34,7 @@
                         </ul>
                     </li>
                     <li><a href="/html/JavaScriptIntroduction.html">Java Script &raquo;</a>
-                       <ul>
+                        <ul>
                             <li><a href="/html/JavaScriptIntroduction.html">JavaScript Introduction</a></li>
                             <li><a href="/html/JavaScriptDocumentation.html">Documentation</a></li>
                             <li><a href="/html/JavaScriptRole.html">Role of JavaScript</a></li>
@@ -51,17 +51,26 @@
             <p>This page is dedicated to creating websites. </p>
             <div class="buttons">
                 <button type="button" class="collapsible">HTML</button>
-                    <div class="button-content">
-                        <p>HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML</p>
-                    </div>
+                <div class="buttonContent">
+                    <p>HTML (from English HyperText Markup Language) is a hypertext markup language for a page. It is used to tell the browser how to display the loaded site.
+                        The language consists of tags - these are a kind of commands that are converted into visual objects in the user's browser. For example, the img tag is used to position images on a page. It has the required src attribute, which specifies a link to the file.
+
+                        This is what the code will look like:</p>
+                    <div class="box"><p>&lt;p> Some accompanying text &lt;/p>
+                        &lt;img src = 'image.png'>
+                        &lt;p> And here's another paragraph to fill the void. &lt;/p></p></div>
+                    <a href="html/htmlPage.html">Click here to continue reading...</a>
+                </div>
+                <br>
                 <button type="button" class="collapsible">CSS</button>
-                    <div class="button-content">
-                        <p>HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML</p>
-                    </div>
+                <div class="buttonContent">
+                    <p>HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML</p>
+                </div>
+                <br>
                 <button type="button" class="collapsible">JAVA SCRIPT</button>
-                    <div class="button-content">
-                        <p>HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML</p>
-                    </div>
+                <div class="buttonContent">
+                    <p>HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTMLHTML HTML</p>
+                </div>
             </div>
         </div>
         <div class="footer">
@@ -70,16 +79,17 @@
         <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;
+
             for (i = 0; i < coll.length; i++) {
-              coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                  content.style.display = "none";
-                } else {
-                  content.style.display = "block";
-                }
-              });
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var buttonContent = this.nextElementSibling;
+                    if (buttonContent.style.maxHeight){
+                        buttonContent.style.maxHeight = null;
+                    } else {
+                        buttonContent.style.maxHeight = buttonContent.scrollHeight + "px";
+                    } 
+                });
             }
         </script>
     </body>
