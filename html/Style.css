@@ -102,9 +102,6 @@ ul#navigation ul li a {
     clear:both;
     width:150px;
 }
-
-
-
 .mainh{
     position: absolute;
     text-align: left;
@@ -133,10 +130,10 @@ ul#navigation ul li a {
     text-align: left;
     font-family:monospace;
     font-size: 18px;
-    margin-right:250px;
-    margin-left:250px;
+    margin:auto;
     padding-left: 10px;
     padding-right: 10px;
+    width:1000px;
 }
 
 .content ul li{
@@ -256,16 +253,28 @@ tr:nth-child(even){
     right:10px;
 }
 .personal-button {
-    width: 900px;
+    width: inherit;
     height:50px;
     border: none;
     padding: 20px;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
     border-radius: 12px;
     padding: 0;
-    margin-left:265px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#rainbow{
+    margin: auto;
+    width:100%;
+    position: relative;
+}
+#clock {
+    margin-right: 50px;
+	height: 300px;
+	width: 400px;
+	color:black;
+	display: flex;
+	align-items: right;
+	justify-content: center;
+	font-size: 50px;
 }
