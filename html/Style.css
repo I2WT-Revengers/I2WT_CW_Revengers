@@ -279,4 +279,18 @@ tr:nth-child(even){
     align-items: right;
     justify-content: center;
     font-size: 50px;
+    
+}
+
+#pic{
+    height:100px;
+    
+}
+
+
+
+.personal-pic{
+    position:absolute;
+    width:15%;
+    
 }
