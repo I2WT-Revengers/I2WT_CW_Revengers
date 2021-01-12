@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="html/Style.css">
     </head>
     <body>
-        <div class="navigation">
+        <div class="navigation" name="top">
             <nav id="nav">
                 <ul id="navigation">
                     <li><a href="index.html">Home &raquo;</a>
@@ -118,13 +118,12 @@
                        <span> Example of code:</span>
                     </p>
                     <div class="box">
-                        <p>
-                            &lt;tagname>{<br>
-                            attribute1(i.e color):black;<br>
-                            attribute2(i.e width):5px;<br>
-                            }
-
-                        </p>
+<xmp>
+(tag/class/id)name{
+  attribute1(i.e color):black;
+  attribute2(i.e width):5px;
+}
+</xmp>
                     </div>
                     <p>
                         <a href="html/IntroductiontoCSS.html">Click here to continue reading...</a>
@@ -141,21 +140,21 @@
                         <span>An actual JS used in this page:</span>
                     </p>
                     <div class="box">
-                        <p>
-                            "var coll = document.getElementsByClassName("collapsible");<br>
-                            var i;<br>
-                            for (i = 0; i < coll&#46;length; i++&#41; &#123;<br>
-                                coll[i].addEventListener("click", function() {<br>
-                                    this.classList.toggle("active");<br>
-                                    var buttonContent = this.nextElementSibling;<br>
-                                    if (buttonContent.style.maxHeight){<br>
-                                        buttonContent.style.maxHeight = null;<br>
-                                    } else {<br>
-                                        buttonContent.style.maxHeight = buttonContent.scrollHeight + "px";<br>
-                                     } <br>
-                                 });<br>
-                              }"<br>
-                         </p>
+<xmp>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+  for (i = 0; i < coll&#46;length; i++&#41; &#123;
+    coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var buttonContent = this.nextElementSibling;
+    if (buttonContent.style.maxHeight){
+      buttonContent.style.maxHeight = null;
+    } else {
+      buttonContent.style.maxHeight = buttonContent.scrollHeight + "px";
+    } 
+ });
+}
+</xmp>
                     </div>
                     <p>
                         <a href="html/JavaScriptIntroduction.html">Click here to continue reading...</a>
@@ -168,6 +167,7 @@
                 <a href="https://www.sublimetext.com">Sublime Text</a> and <a href="http://brackets.io">Brackets</a> are some of the main IDEs for web development, supporting HTML, CSS, JS, PHP, Python and similar web languages.
                 On the other hand, there are advanced IDEs such as Adobe Dreamweaver that offer several other features (eg server connection, FTP).
             </p>
+            <a href="#top">To the top!</a>
         </div>
         <div class="footer">
             <h4>Developed by <span id="nameplate">"Revengers"</span></h4>
@@ -175,7 +175,6 @@
         <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;
-
             for (i = 0; i < coll.length; i++) {
                 coll[i].addEventListener("click", function() {
                     this.classList.toggle("active");

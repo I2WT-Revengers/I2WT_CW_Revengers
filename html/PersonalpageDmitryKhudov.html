@@ -46,12 +46,187 @@
                 </ul>
             </nav>
         </div>
-        <h1 class="mainh">Web design history</h1>
-
-
-
+        <h1 class="mainh">Personal page</h1>
         <br><br><br><br><br><br><br>
         <div class="content">
+            <h2>Index page</h2>
+            <ul id="indextable">
+            <li><p>Navigation bar HTML</p>
+            <div class="box">
+                <xmp>
+<div class="navigation" name="top">
+    <nav id="nav"> 
+            <ul id="navigation">
+                <li><a href="index.html">Home &raquo;</a>
+                    <ul>
+                        <li><a href="/html/HistoryOfWebDesign.html">History of web design</a></li>
+                         <li><a href="/html/WebServers.html">Web servers</a></li>
+                        <li><a href="/html/Domains.html"> Domains </a></li>
+                        <li><a href="/html/References.html"> References </a></li>
+                    </ul>
+                </li>
+                 <li><a href="html/">HTML &raquo;</a>
+                     <ul>
+                        <li><a href="/html/htmlPage.html">Introduction to HTML </a></li>
+                        <li><a href="html/htmlDocumentation.html">Documentation</a></li>
+                        <li><a href="/html/htmlHistory.html">History of HTML</a></li>
+                         <li><a href="/html/">...</a></li>
+                     </ul>
+                </li>
+                <li><a href="/html/IntroductiontoCSS.html">CSS &raquo;</a>
+                    <ul>
+                        <li><a href="/html/IntroductiontoCSS.html">Introduction to CSS</a></li>
+                        <li><a href="/html/RoleofCSS.html">Role</a></li>
+                        <li><a href="/html/HistoryofCSS.html">History</a></li>
+                        <li><a href="/html/DocumentationofCSS.html">Documentation</a></li>
+                        <li><a href="/html/ReferencesCSS.html">References</a></li>
+                    </ul>
+                 </li>
+                 <li><a href="/html/JavaScriptIntroduction.html">Java Script &raquo;</a>
+                    <ul>
+                        <li><a href="/html/JavaScriptIntroduction.html">JavaScript Introduction</a></li>
+                        <li><a href="/html/JavaScriptDocumentation.html">Documentation</a></li>
+                        <li><a href="/html/JavaScriptRole.html">Role of JavaScript</a></li>
+                        <li><a href="/html/JavaScriptHistory.html">History of JavaScript</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+                    </xmp></div>
+            </li>
+            <li><p>Collapsible buttons with content</p>
+            <div class="box">
+            <xmp>
+ <button type="button" class="collapsible">HTML</button>
+   <div class="buttonContent">
+    <p>
+     HTML (from English HyperText Markup Language) is a hypertext markup 
+     language for a page. It is used to tell the browser how to display 
+     the loaded site.
+        
+     The language consists of tags - these are a kind of commands that 
+     are converted into visual objects in the user's browser. For example,
+     the img tag is used to position images on a page. It has the required
+     src attribute, which specifies a link to the file.
+     <span>This is what the code will look like:</span>
+    </p>
+    <div class="box">
+     <p>
+      &lt;p> Some accompanying text &lt;/p>
+      &lt;img src = 'image.png'>
+      &lt;p> And here's another paragraph to fill the void. &lt;/p>
+     </p>
+    </div>
+    <p>
+     <a href="html/htmlPage.html">Click here to continue reading...</a>
+    </p>
+</div>
+</xmp>    
+            </div>
+            </li>
+            <li><p>Java Script code for the same collapsible</p>
+<div class="box">
+<xmp>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var buttonContent = this.nextElementSibling;
+    if (buttonContent.style.maxHeight){
+      buttonContent.style.maxHeight = null;
+    } else {
+      buttonContent.style.maxHeight = buttonContent.scrollHeight + "px";
+    } 
+  });
+}              
+</xmp>
+    </div>
+            </li>
+            </ul>
+            <h2>Domains page</h2>
+            <ul id="indextable">
+            <li><p>Table with domains</p>
+            <div class="box">
+<xmp>
+<table class="table">
+    <tr><th>Name</th><th>Purpose</th><th>Description</th></tr>
+    <tr>
+        <td><a href="https://wikipedia.org/wiki/.aero" target="_blank">.aero</a></td>
+        <td>Air Transport</td>
+        <td>Verification of eligibility required. Only organizations related to air 
+            travel are registered.</td>
+    </tr>
+    <tr>
+        <td><a href="https://wikipedia.org/wiki/.asia" target="_blank">.asia</a></td>
+        <td>Asian-Pacific area</td>
+        <td>It is a TLD for companies, organizations and individuals based in the 
+            Asia, Australia and Oceania and Pacific region.</td>
+    </tr>
+    <tr>
+        <td><a href="https://wikipedia.org/wiki/.biz" target="_blank">.biz</a></td>
+        <td>business</td>
+        <td>This is an open TLD. Any individual or legal entity has the right to 
+            register, however, registration may be challenged in the future if this 
+            person does not engage in commercial activities in accordance with the 
+            domain charter. The TLD was created to alleviate the situation with 
+            the .com domain, which has become incredibly popular and, as a result, overcrowded.</td>
+    </tr>
+    <tr>
+        <td><a href="https://wikipedia.org/wiki/.com" target="_blank">.com</a></td>
+        <td>Commercion</td>
+        <td>This is an open source TLD. Any natural or legal person has the right 
+            to register. Although originally intended for commercial businesses, 
+            it has become the “main” domain name TLD for a variety of reasons 
+            and is now used by all types of organizations, including educational
+            institutions (usually private), individuals, and non-profit and semi-
+            profit organizations. A registered domain name may be challenged if 
+            the owner cannot prove that the name was reserved without the purpose
+            of resale. This limits cybersquatting.</td>
+    </tr>
+    <tr>
+        <td><a href="https://wikipedia.org/wiki/.edu" target="_blank">.edu</a></td>
+        <td>Education</td>
+        <td>TLD .edu is designed for educational institutions from elementary 
+            schools to high schools. In 2001, the United States limited its use 
+            to higher education institutions accredited by recognized national
+            agencies from a special accreditation list maintained by the US 
+            Department of Education. Therefore, this domain is almost exclusively
+            used by US colleges and universities. Some educational institutions 
+            that do not meet the current registration criteria use this domain
+            on a grandfather clause basis.</td>
+    </tr>
+    <tr>
+        <td><a href="https://wikipedia.org/wiki/.gov" target="_blank">.gov</a></td>
+        <td>Government</td>
+        <td>.gov TLD is restricted for use by the US government and its subsidiaries.</td>
+        
+    </tr>
+    <tr>
+        <td><a href="https://wikipedia.org/wiki/.name" target="_blank">.name</a></td>
+        <td>Personalities by name</td>
+        <td>his is an open TLD. Any individual has the right to register,
+            however, registration may be challenged in the future if, in 
+            accordance with the charter of the domain, the name is not the
+            name of an individual (or is a pseudonym).</td>
+    </tr>
+    <tr>
+        <td><a href="https://wikipedia.org/wiki/.ru" target="_blank">.ru</a></td>
+        <td>Country</td>
+        <td>Domain that is used for russian segment of the web</td></tr>        
+    <tr>
+        <td><a href="https://wikipedia.org/wiki/.org" target="_blank">.org</a></td>
+        <td>Organizations</td>
+        <td>This is an open TLD. Any natural or legal person has the right to
+            register. Originally intended for use by non-profit organizations,
+            it is still used today for mostly the same purpose.</td>
+    </tr>
+</table>             
+</xmp>   
+            </div>   
+            </li>
+            </ul>
         </div>
         <br><br>
         <div class="footer">
